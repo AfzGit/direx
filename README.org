@@ -34,18 +34,22 @@ sudo mv direx /usr/bin/
 ============
 #+END_SRC
 
-- =direx /bin=
-#+BEGIN_SRC bash
-=== /bin ===
--> Details: Binaries. Contains Essential binaries and executables.
--> Permissions: rwxr-xr-x (or) 755
-============
-#+END_SRC
-
 - =direx /var/cache=
 #+BEGIN_SRC bash
 === /var/cache ===
 -> Details: Application cache data.
 -> Permissions: rwxr-xr-x (or) 755
 ==================
+#+END_SRC
+
+- =direx=
+#+BEGIN_SRC bash
+======= Available information =======
+/bin /boot /dev /etc /home /lib
+/mnt /opt /root /run /sbin /srv
+/sys /tmp /usr/bin /usr/include
+/usr/lib /usr/local /usr/sbin
+/usr/share /var /var/cache /var/spool
+/var/tmp /var/log /var/opt /var/run
+=====================================
 #+END_SRC
