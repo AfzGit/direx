@@ -16,7 +16,36 @@ chmod a+x direx
 sudo mv direx /usr/bin/
 #+END_SRC
 * Usage
-=direx /usr=
-=direx usr=
-=direx /bin=
-=direx /var/cache=
+- =direx /usr=
+#+BEGIN_SRC bash
+=== /usr ===
+-> Details: Location of user programs, files and documentation. Shareable and read-only.
+-> Permissions: rwxr-xr-x (or) 755
+-> Sub-Directories: bin/ include/ lib/ local/ sbin/ share/
+============
+#+END_SRC
+
+- =direx usr=
+#+BEGIN_SRC bash
+=== /usr ===
+-> Details: Location of user programs, files and documentation. Shareable and read-only.
+-> Permissions: rwxr-xr-x (or) 755
+-> Sub-Directories: bin/ include/ lib/ local/ sbin/ share/
+============
+#+END_SRC
+
+- =direx /bin=
+#+BEGIN_SRC bash
+=== /bin ===
+-> Details: Binaries. Contains Essential binaries and executables.
+-> Permissions: rwxr-xr-x (or) 755
+============
+#+END_SRC
+
+- =direx /var/cache=
+#+BEGIN_SRC bash
+=== /var/cache ===
+-> Details: Application cache data.
+-> Permissions: rwxr-xr-x (or) 755
+==================
+#+END_SRC
