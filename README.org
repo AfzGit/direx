@@ -1,0 +1,22 @@
+#+title: Direx
+
+* About
+Direx (Directories Explained) is a CLI tool to show information on a directory.
+* Installation
+- Using wget
+#+BEGIN_SRC bash
+wget https://raw.githubusercontent.com/AfzGit/direx/main/direx
+chmod a+x direx
+sudo mv direx /usr/bin/
+#+END_SRC
+- Using curl
+#+BEGIN_SRC bash
+curl https://raw.githubusercontent.com/AfzGit/direx/main/direx --output direx
+chmod a+x direx
+sudo mv direx /usr/bin/
+#+END_SRC
+* Usage
+=direx /usr=
+=direx usr=
+=direx /bin=
+=direx /var/cache=
