@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$1" = "/bin" -o "$1" = "bin" ]; then
+if [[ "$1" == "/bin" || "$1" == "bin" ]]; then
     echo "=== /bin ==="
     echo "-> Details: Binaries. Contains Essential binaries and executables."
     echo "-> Permissions: rwxr-xr-x (or) 755"
