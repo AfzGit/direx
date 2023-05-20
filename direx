@@ -177,6 +177,13 @@ elif [[ $1 == "/var/run" || $1 == "var/run" || $1 == "var/run/" || $1 == "/var/r
     echo "-> Details: Variable runtime data."
     echo "-> Permissions: rwxrwxrwx (or) 777"
     echo "================"
+    
+elif [[ $1 == "/proc" || $1 == "proc" ]]; then
+    echo "=== /proc ==="
+    echo "-> Details: Virtual filesystem for accessing process and kernel-related information."
+    echo "-> Permissions: No direct permission (virtual filesystem)."
+    echo "-> Contains process-specific directories and system information files."
+    echo "============="
 
 else
     echo "======= Available information ======="
